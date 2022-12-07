@@ -4,6 +4,7 @@ return [
   "Remember Me"   => "تذكرنى",
   "Forgot Code ?"   => "هل نسيت الرمز؟",
   "Login"   => "تسجيل الدخول",
+  "Register"   => "عضو جديد",
   "Follow Us"   => "تابعنا",
   "Name"   => "اسم",
   "Gender"   => "النوع",

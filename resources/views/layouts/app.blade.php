@@ -11,11 +11,9 @@
   <div class="wrapper">
 
     <!-- Navbar -->
-    @include('partials.nav')
+    {{-- @include('partials.nav') --}}
     <!-- /.navbar -->
 
-    <!-- Main Sidebar Container -->
-    @include('partials.sidebar')
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
@@ -26,7 +24,7 @@
       <!-- Main content -->
       <section class="content">
         <div class="container-fluid">
-          @include('partials.validation_errors')
+          {{-- @include('partials.validation_errors') --}}
           @yield('content')
           <input type="hidden" id="system_currency" value="{{cache('currency')}}">
         </div><!-- /.container-fluid -->
@@ -37,7 +35,7 @@
     <!-- /.content-wrapper -->
 
     <!-- Footer -->
-    @include('partials.footer')
+    {{-- @include('partials.footer') --}}
     <!-- /.Footer -->
 
     <!-- Control Sidebar -->

@@ -16,6 +16,22 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::group(
+    [
+        'prefix' => LaravelLocalization::setLocale(),
+//        'prefix' => '/admin',
+        'as' =>'admin.',
+        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+    ], function(){
+
+
+        Route::get('/', function () {
+            return view('welcome');
+        });
+
+});
+
 Route::group(
     [
         'prefix' => LaravelLocalization::setLocale(),
@@ -23,9 +39,10 @@ Route::group(
         'as' =>'admin.',
         'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ,'auth']
     ], function(){
-        Route::get('/', function () {
-    return view('dashboard');
-});
+
+            Route::get('/admin', function () {
+            return view('dashboard');
+        });
 
 
 

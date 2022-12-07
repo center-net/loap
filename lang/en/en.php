@@ -6,6 +6,7 @@ return [
     "Remember Me"   => "Remember Me",
     "Forgot Code ?"   => "Forgot Code ?",
     "Login"   => "Login",
+    "Register"   => "Register",
     "New Patient ?"   => "New Patient ?",
     "Follow Us"   => "Follow Us",
     "New Patient"   => "New Patient",
